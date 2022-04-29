@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Myriad Pro";
+  font-display: swap;
+  src: url("../fonts/myriadProLight.woff2") format("woff2"),
+    url("../fonts/myriadProLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  font-display: swap;
+  src: url("../fonts/myriadProRegular.woff2") format("woff2"),
+    url("../fonts/myriadProRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --grid-unit-h: 2.5vh;
+  --grid-unit-w: 2.5vw;
+  --color-gallery: #EFEFEF;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-green: green;
+  --color-buttercup: #EEB314;
+  --color-mineShaft: #333333;
+  --myriadPro: "Myriad Pro", "Arial", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {}
+
+.site {
+  font-family: var(--myriadPro);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+
+  background-color: var(--color-gallery);
+}
+
+.container {
+  width: calc(32 * var(--grid-unit-w));
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: top;
+}
+
+svg {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}

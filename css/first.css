@@ -1,0 +1,234 @@
+.first__top {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.75 * var(--grid-unit-h)) calc(0.5 * var(--grid-unit-w));
+  margin-bottom: calc(2 * var(--grid-unit-h));
+
+  border: 20px solid var(--color-buttercup);
+}
+
+@media (max-width: 1000px) {
+  .first__top {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 360px) {
+  .first__top {
+    justify-content: center;
+    padding-bottom: calc(2.5 * var(--grid-unit-h));
+  }
+}
+
+.first__logo-img {
+  width: 219px;
+  height: 75px;
+  max-width: initial;
+}
+
+@media (max-width: 490px) {
+  .first__logo-img {
+    width: 150px;
+  }
+}
+
+.first__content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: calc(0.5 * var(--grid-unit-h));
+}
+
+@media (max-width: 1000px) {
+  .first__content-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.first__content {
+  width: calc(20 * var(--grid-unit-w));
+}
+
+@media (max-width: 1000px) {
+  .first__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--grid-unit-h);
+  }
+}
+
+.first__lists {
+  width: calc(8 * var(--grid-unit-w));
+}
+
+@media (max-width: 1000px) {
+  .first__lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.first__img {
+  width: 650px;
+  height: 571px;
+  margin-bottom: calc(1.75 * var(--grid-unit-h));
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.first__text {
+  margin-top: 0;
+  margin-bottom: calc(0.25 * var(--grid-unit-h));
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .first__text {
+    text-align: center;
+  }
+}
+
+.first__descr {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .first__descr {
+    text-align: center;
+  }
+}
+
+.first__lists {
+  padding: calc(0.5 * var(--grid-unit-h)) calc(0.5 * var(--grid-unit-h));
+
+  border: 20px solid var(--color-buttercup);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.first__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.first__list:first-child {
+  margin-bottom: calc(2 * var(--grid-unit-h));
+}
+
+.first__item:not(:last-child) {
+  margin-bottom: calc(0.75 * var(--grid-unit-h));
+}
+
+.first__item {
+  line-height: 1;
+}
+
+.first__bottom {
+  display: flex;
+  padding-top: var(--grid-unit-h);
+  padding-bottom: calc(1.5 * var(--grid-unit-h));
+  padding-left: calc(1.75 * var(--grid-unit-w));
+  padding-right: calc(1.75 * var(--grid-unit-w));
+
+  letter-spacing: normal;
+
+  border: 20px solid var(--color-buttercup);
+}
+
+@media (max-width: 960px) {
+  .first__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.first__info {
+  width: calc(9 * var(--grid-unit-w));
+  margin-right: calc(6 * var(--grid-unit-w));
+}
+
+@media (max-width: 960px) {
+  .first__info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: var(--grid-unit-h);
+
+    text-align: center;
+  }
+}
+
+.first__info-text {
+  width: calc(8 * var(--grid-unit-w));
+  margin-top: 0;
+  margin-bottom: calc(0.25 * var(--grid-unit-h));
+
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-mineShaft);
+
+  border-bottom: 1px solid var(--color-mineShaft);
+}
+
+@media (max-width: 960px) {
+  .first__info-text {
+    width: 100%;
+  }
+}
+
+.first__tel {
+  margin-right: calc(1.75 * var(--grid-unit-h));
+}
+
+.first__tel,
+.first__mail {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-mineShaft);
+  text-decoration: none;
+}
+
+@media (max-width: 641px) {
+  .first__tel {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.first__address {
+  width: calc(9.5 * var(--grid-unit-w));
+
+  line-height: 1.2;
+  color: var(--color-mineShaft);
+}
+
+@media (max-width: 960px) {
+  .first__address {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+.first__address-text {
+  margin: 0;
+}
+
+.first__address-text+.first__address-text {
+  margin-top: calc(0.5 * var(--grid-unit-h));
+}
