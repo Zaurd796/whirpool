@@ -47,7 +47,8 @@ body {}
 }
 
 .container {
-  width: calc(32 * var(--grid-unit-w));
+  max-width: 1556px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
